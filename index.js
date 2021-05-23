@@ -4,7 +4,7 @@ const AWS = require('aws-sdk')
 const docClient = new AWS.DynamoDB.DocumentClient({region: 'eu-west-1'})
 
 exports.handler = function(event, context, callback){
-    console.log('Procesando los datos del nuevo vecino: ' + JSON.stringify(event, null, 2))
+    console.log('Procesando los datos del nuevo vecino desde git: ' + JSON.stringify(event, null, 2))
 
     let date = new Date().getTime();
     
